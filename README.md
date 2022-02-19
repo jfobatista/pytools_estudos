@@ -3,6 +3,9 @@ Módulo para exemplificar construção de projetos Python no curso PyTools
 
 Nesse curso é ensinado a contribuir com projetos de código aberto
 
+[![Updates](https://pyup.io/repos/github/jfobatista/pytools_estudos/shield.svg)](https://pyup.io/repos/github/jfobatista/pytools_estudos/)
+[![Python 3](https://pyup.io/repos/github/jfobatista/pytools_estudos/python-3-shield.svg)](https://pyup.io/repos/github/jfobatista/pytools_estudos/)
+
 Suportada pela versão 3 de Python
 
 Para instalar:
