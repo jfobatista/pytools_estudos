@@ -24,9 +24,6 @@ jobs:
       uses: actions/setup-python@v1
       with:
         python-version: 3.8
-    - name: Copying configurations
-      run: |
-        cp .env.local .env
     - name: Install dependencies
       run: |
         pip install pipenv
