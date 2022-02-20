@@ -3,7 +3,7 @@ pycodestyle==2.8.0
 pyflakes==2.4.0
 mccabe==0.6.1
 tomli==1.0.0
-py==1.8.2
+py==1.10.0
 iniconfig
 pluggy<2.0,>=0.12
 atomicwrites==1.0
