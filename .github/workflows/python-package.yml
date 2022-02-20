@@ -40,4 +40,4 @@ jobs:
         pytest libpythonpto
     
     - name: Test with pytest
-      run: pytest libpythonpro
+      run: pytest libpytools_jfobatista
