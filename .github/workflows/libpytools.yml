@@ -1,4 +1,4 @@
-name: libpythonproClara-CI
+name: lybpytools
 
 on:
 
@@ -39,4 +39,4 @@ pip install -r requirements-dev.txt
   flake8 .
 
 - name: Test with pytest
-      run: pytest libpythonpro --cov=libpythonpro
+      run: pytest libpytools_jfobatista --cov=pytools_estudos
