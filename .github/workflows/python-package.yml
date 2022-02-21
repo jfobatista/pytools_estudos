@@ -40,8 +40,5 @@ jobs:
     - name: Test with pytest
       run: pytest .\libpytools_jfobatista\ --cov=libpytools_jfobatista
 
-    - name: Relatório Coverage
-            env:
-              CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-            run: |
-              codecov
+    -name: Relatório Coverage
+    uses: codecov/codecov-action@v2
