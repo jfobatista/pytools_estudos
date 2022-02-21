@@ -39,5 +39,6 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       run: pytest .\libpytools_jfobatista\ --cov=libpytools_jfobatista
-    -name: Relatório Coverage
-    uses: codecov/codecov-action@v2
+
+    - name: Relatório Coverage
+      uses: codecov/codecov-action@v2
