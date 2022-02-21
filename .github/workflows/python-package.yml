@@ -38,5 +38,7 @@ jobs:
     - name: Test with pytest
       run: pytest .\libpytools_jfobatista\ --cov=libpytools_jfobatista
 
-    chmod +x codecov
-    ./codecov
+curl -Os https://uploader.codecov.io/latest/linux/codecov
+
+chmod +x codecov
+./codecov -t ${e1bfbe44-aadb-41b8-bb6a-6ab5ac225362)
