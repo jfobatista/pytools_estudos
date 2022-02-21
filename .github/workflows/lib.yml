@@ -11,8 +11,7 @@ on:
 
 jobs:
   build:
-    env:
-       GITHUB_TOKEN: ${{e1bfbe44-aadb-41b8-bb6a-6ab5ac225362}}
+
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
@@ -40,8 +39,7 @@ jobs:
     - name: Test with pytest
       run: pytest libpytools_jfobatista --cov=libpytools_jfobatista
 
-    - name: Codecov
-      env:
-        CODECOV_TOKEN: ${{e1bfbe44-aadb-41b8-bb6a-6ab5ac225362}}
-      run: |
-        codecov
+    curl -Os https://uploader.codecov.io/v0.1.0_4653/linux/codecov
+
+    chmod +x codecov
+    ./codecov -t ${e1bfbe44-aadb-41b8-bb6a-6ab5ac225362}
