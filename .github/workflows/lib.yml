@@ -5,7 +5,7 @@ on: [ push ]
 jobs:
   build:
     env:
-      GITHUB_TOKEN: ${{ e1bfbe44-aadb-41b8-bb6a-6ab5ac225362 }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     runs-on: ubuntu-latest
 
@@ -28,6 +28,6 @@ jobs:
           pytest --cov=libpythonpro
       - name: Relatório Coverage
         env:
-          CODECOV_TOKEN: ${{ e1bfbe44-aadb-41b8-bb6a-6ab5ac225362 }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         run: |
           codecov
