@@ -42,9 +42,4 @@ jobs:
       run: |
         codecov
       env:
-        token:
-    - name: Relatório Codecov 2
-      uses: codecov/codecov-action@v2
-      with:
-        fail_ci_if_error: true
-        token:
+        token: e1bfbe44-aadb-41b8-bb6a-6ab5ac225362
