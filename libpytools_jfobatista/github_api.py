@@ -1,6 +1,6 @@
 import requests
 
-
+#está efetivamente acessando a api do git.
 def buscar_avatar(usuario):
     """
     Busca o avatar de um usuárioo no gitHub
@@ -12,5 +12,3 @@ def buscar_avatar(usuario):
     return resposta.json()['avatar_url']
 
 
-if __name__ == '__main__':
-    print(buscar_avatar('jfobatista'))
