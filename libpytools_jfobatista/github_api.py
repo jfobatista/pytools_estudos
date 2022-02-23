@@ -1,6 +1,7 @@
 import requests
 
-#está efetivamente acessando a api do git.
+
+# está efetivamente acessando a api do git.
 def buscar_avatar(usuario):
     """
     Busca o avatar de um usuárioo no gitHub
@@ -10,5 +11,3 @@ def buscar_avatar(usuario):
     url = f'https://api.github.com/users/{usuario}'
     resposta = requests.get(url)
     return resposta.json()['avatar_url']
-
-

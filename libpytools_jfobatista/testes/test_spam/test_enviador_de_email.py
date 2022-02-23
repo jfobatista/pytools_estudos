@@ -24,6 +24,7 @@ def test_remetente(remetente):
     )
     assert remetente in resultado
 
+
 @pytest.mark.parametrize(
     'remetente',
     ['', 'foobar.com.br']
@@ -37,4 +38,3 @@ def teste_remetente_invalido(remetente):
             'Curso Python Pro',
             'Primeiro e-mail de teste'
         )
-
