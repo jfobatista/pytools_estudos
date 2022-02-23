@@ -3,7 +3,6 @@ from unittest.mock import Mock
 import pytest
 
 from libpytools_jfobatista.spam.main import EnviadorDeSpam
-from libpytools_jfobatista.testes.spam.enviador_de_email import Enviador
 from libpytools_jfobatista.testes.spam.modelos import Usuario
 
 

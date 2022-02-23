@@ -1,4 +1,4 @@
-#Arquivo que disponibiliza as fixtures Conexão e Sessão para outros módulos
+# Arquivo que disponibiliza as fixtures Conexão e Sessão para outros módulos
 import pytest
 
 from libpytools_jfobatista.testes.spam.db import Conexao
@@ -15,9 +15,9 @@ def conexao():
 
 @pytest.fixture
 def sessao(conexao):
-    #Setup
+    # Setup
     sessao_obj = conexao.gerar_sessao()
     yield sessao_obj
-    #Tear Down
+    # Tear Down
     sessao_obj.roll_back()
     sessao_obj.fechar()
